@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>eARC - ARC Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="arcform-styles.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="arcform-scripts.js" defer></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-link">
+                <div class="logo">
+                    <img src="images/AFB-log.png" alt="eARC Logo" class="logo-img">
+                </div>
+                <span class="logo-text">eARC</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#user-guide">User Guide</a></li>
+                    <li><a href="#about">About eARC</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="arc-form-content">
+
+        <!-- Sidebar navigation -->
+        <div class="sidebar">
+            <ul>
+                <li data-target="welcome-content">Welcome</li>
+                <li class="collapsible">
+                    <span class="arc-guidelines" data-target="arc-guidelines-content">ARC Guidelines</span>
+                    <!-- clickable text -->
+                    <span class="arrow">&#9662;</span>
+                    <ul class="content">
+                        <li data-target="page-1-content">Page 1</li>
+                        <li data-target="page-2-content">Page 2</li>
+                        <li data-target="page-3-content">Page 3</li>
+                        <li data-target="page-4-content">Page 4</li>
+                        <li data-target="page-5-content">Page 5</li>
+                    </ul>
+                </li>
+                </li>
+                <li>ARC 1</li>
+                <li>ARC 2</li>
+                <li>ARC 3</li>
+                <li>ARC 3</li>
+            </ul>
+        </div>
+
+
+
+        <!-- Main content -->
+
+        <div id="welcome-content" class="content-div" style="display:block;">
+            <h1 class="title">Welcome to the eARC Prototype</h1>
+
+            <p class="intro-text">
+                Thank you for visiting the eARC platform! Please note that this version is a prototype and a work in
+                progress. We are actively developing the eARC to improve communication and efficiency for Andersen Air
+                Force Base personnel and partners.
+            </p>
+
+            <div class="section why-earc">
+                <h2 class="title">Why eARC Matters</h2>
+                <p class="intro-text">
+                    The eARC project aims to revolutionize the Andersen Reception Checklist process. By reducing email
+                    reliance and introducing a user-friendly platform, we aim to streamline communication, enhance
+                    collaboration, and save valuable time for our dedicated personnel. Your feedback and support are
+                    crucial as we work towards creating a more efficient and effective solution.
+                </p>
+            </div>
+
+            <div class="section feedback">
+                <h2 class="title">Your Feedback Matters</h2>
+                <p class="intro-text">
+                    Your insights and suggestions play a vital role in shaping the future of the eARC. We welcome your
+                    feedback as we continue to refine and enhance this platform. Together, we can make a significant
+                    difference in improving operations and collaboration at Andersen Air Force Base.
+                </p>
+            </div>
+
+            <div class="thanks-and-button">
+                <p class="thanks">Thank you for being part of this exciting journey!</p>
+                <a href="#" class="start-button" onclick="showArcGuidelines();">Start the ARC Form</a>
+            </div>
+
+
+        </div>
+
+        <div id="arc-guidelines-content" class="content-div" style="display:none;">
+            <h1>ANDERSEN AFB RECEPTION CHECKLIST</h1>
+            <h2>AS OF: April 2023</h2>
+
+            <p><strong>NON-US/FOREIGN UNITS</strong> request to operate on AAFB for training when invited as a
+                participant in
+                official US exercises. If there are no US aviation assets with thatspecific exercise on AAFB, a
+                <strong>US LIASISON IS REQUIRED</strong>
+                and must accompany the non-US/foreign military while they conduct all operations on
+                AAFB including ADVON and POST deployment. The US Exercise originator is responsible to provide this
+                liaison and fund any relevant TDY costs. This named US Liaison should be used as your POC when filling
+                out EALs, FVRs, and flight line entry request paperwork with a current phone number and email.
+                *A LIAISON is not required for RON or ferry flight operations.
+            </p>
+
+            <p>To ensure proper coordination installation support for your mission, the following checklist must be
+                thoroughly reviewed, completed, and provided to 36 LRS Readiness Flight (36 LRS/LGRDX) 120 day
+                out from execution. IDRC will coordinate all checklist requests for you and provide your unit with the
+                results of the coordination process no later than (NLT) 2 weeks from the earliest indicated arrival
+                date.
+                All attachments referenced in this checklist are at the end of the document.
+            </p>
+            <p>It is the responsibility of the both the incoming units to follow up with the AAFB Reception Working
+                Group (RWG) reps to obtain a status update on their requests. The RWG reps will work the support
+                request at the direction of IDRC and may need to ask the incoming units specific questions about their
+                requests, in which case they will ask the incoming units’ POCs. However, it is still the responsibility
+                of
+                the incoming unit to clarify all requests to the RWG reps, whether the request is unique or not.
+            </p>
+            <p>To guarantee receipt of your request, the completed reception checklist must be sent electronically to
+                our
+                distribution list (36wg.idrc@us.af.mil (unclassified) or 36wg.idrc@andersen.af.smil.mil (classified))
+                with
+                a follow-up phone call to 366-1844/2331/3464/1769. Due to some unique capabilities at AAFB, keep in
+                mind, that if an item of support is not sufficiently indicated on the checklist, you may not receive the
+                level
+                of support you expect.
+            </p>
+            <p>As an additional note, the AAFB Reception Working Group (RWG) convenes weekly to discuss
+                reception support requirements of all inbound units. We encourage visiting units to attend RWG
+                meetings during their site visit or upon advanced party (ADVON) arrival. Please contact our office prior
+                to arrival so we can accommodate your attendance.
+            </p>
+            <p>All units arriving on AAFB in support of contingency or AEF deployments are requested to send 36
+                LRS/IDRC a passenger manifest as soon as one is available. This will benefit us in getting you a
+                speedy response regarding what AAFB can give your unit while on station.
+            </p>
+            <p>The following timeline will facilitate your mission success. Many of these items are time sensitive
+                and failure to complete them as indicated may directly affect your support.
+            </p>
+            <h3>***Units MUST bring their own GPC cardholders to Andersen AFB for micro-purchases***
+            </h3>
+            <p>Upon completion of your exercise, submit an After Action Report to the 36 WG/IDRC.
+            </p>
+            <h2>NLT 150-180 DAYS PRIOR TO ARRIVAL</h2>
+            <p>
+                All units who require changes to Andersen AFB network infrastructure MUST submit the
+                appropriate Change Request. This includes but is not limited to connecting unit owned systems to
+                Andersen AFB infrastructure, configuration changes, network modifications and new installations.
+                Units are required to provide justification, make, model, serial number, MAC addresses and IP
+                addresses (at a minimum) of all unit owned equipment requesting to be connected to Andersen AFB
+                infrastructure. Contact 36 CS/RWG (Reception Working Group) at DSN: (315) 362-2703. COMM:
+                (671) 362-2703 or via email 36CS.SCXP.RWG@us.af.mil for further information. COMM: (671)
+                362-2703 or via email 36CS.SCXP.RWG@us.af.mil for further information
+            </p>
+
+            <h2>NLT 120-90 DAYS PRIOR TO ARRIVAL</h2>
+            <p>
+                ATR UNITS - All completed ARCS must be submitted through USFJ PRIOR to turn into AAFB. Checklist must be
+                completed to be as best extent as possible and sent to the 36 WG/IDRC box at 36wg.idrc@us.af.mil
+            </p>
+
+            <button class="next-button" data-target="page-1-content">Next</button>
+
+        </div>
+
+        <!-- Content for Page 1 -->
+        <div id="page-1-content" class="content-div" style="display:none;">
+            <h2>AS OF: April 2023</h2>
+            <h3>NLT 90 DAYS PRIOR TO ARRIVAL</h3>
+            <p>Formulate requirements necessary for financial management and contracting support; Funding for
+                mobile office workspace trailers required (36 OG/RA, 366-3665)
+            </p>
+            <p>USAF units for more than 60 days/non-USAF/foreign units needing AGE: Submit IMSR for
+                WRM/AGE or MUNS assets NLT 90 days prior to arrival. Send an UNSIGNED IMSR to 36
+                LRS/WRM box @ 36lrs.wrm@us.af.mil or 36 WG/IDRC box at 36wg.idrc@us.af.mil. IMSR must
+                be approved by HQ/AF before unit may use them.
+            </p>
+            <p>Ensure all funding documents (MIPRs) and/or account information have been submitted to the
+                appropriate agencies and all requirements have been submitted to 36 CONS to execute contracts.
+            </p>
+            <p>All units requesting the usage of the Pacific Readiness Training Center-Andersen(Northwest Field)
+                must submit a comprehensive Concept of Operations and Coordination Letter to 36 CRG/XP for
+                coordination. Send initial notification to 36CRG.XP.Planning@us.af.mil. Templates and further
+                instructions will be provided by 36 CRG/XP upon receipt of initial request. 
+            </p>
+            <h3>NLT 60 DAYS PRIOR TO ARRIVAL</h3>
+            <p>Email complete checklist to IDRC and follow-up with a phone call (addresses and numbers above)</p>
+            <p>Create and submit a Mass Account worksheet attached to account access letters; 1 per unit to
+                36 CS/RWG</p>
+            <p>Funding documentation for all foreign visitors/ACSA’s. An appointment letter to handle and sign
+                MLS forms on behalf of the country must be signed by a command headquarters prior to arrival. (36
+                LRS/LGRDX, 366-6583)</p>
+            <p>USAF Units: Submit IMSR for WRM/AGE/MUNS assets NLT 60 days prior to arrival. Send an
+                UNSIGNED IMSR to 36 LRS/WRM box @ 36lrs.wrm@us.af.mil or 36 WG/IDRC box at
+                36wg.idrc@us.af.mil. IMSR must be approved by WRMPM before unit may use them.</p>
+            <p>All units requiring transportation services need to initiate conversation with the 36 LRS/LGRP
+                CORs to inform them of initial transportation needs and to complete an Statement of Work (SOW).
+                This includes transportation of cargo upon arrival/departure and transportation of PAX during your
+                stay at Andersen. (366-2033/2294/5854/3739) (36lrs.lgrp@us.af.mil)</p>
+            <p>Foreign nations under the Acquisition and Cross Servicing Agreement (ACSA) program must
+                submit a Mutual Logistics Support (MLS) form for services requested for services to be received. At
+                the end of the visit charges will be ascertained and MLS will be authenticated with the ACSA
+                managers on base. POC’s: Charles E. Kucharski (charles.kucharski@us.af.mil) DSN: 366-6583.</p>
+            <h3>NLT 30 DAYS PRIOR TO ARRIVAL</h3>
+            <p>Contact IDRC for current status of checklist requests</p>
+            <p>Provide IDRC with passenger manifest ASAP, if on AAFB for contingency support</p>
+            <p>For all reservations, Andersen AFB Lodging requires incoming units to submit a list of occupant
+                NAMES. Without info, check-in may not be possible depending on hotel. (Template for lodging is
+                on page 17, along with email address for submission)(36 FSS/SVML, 362-5511 or 362-5801)</p>
+            <p>Foreign Visitors Request (FVR)/Information Protection (36 WG/IP, 366-5108)
+                (36sfs.vcc@us.af.mil) (36wg.ip.1@us.af.mil)</p>
+            <p>Restricted area Entry Authorization List memo (36 OSS/OSAM, 366-4188/1010); send all EALs to
+                36OSS.CSS@us.af.mil OSS/CC is the approval authority for the airfield, WOC and
+                Tropicana.</p>
+            <p>Flying Units -Patriot Excalibur (PEX) support (36 OSS/OSX, 366-3016/5221/2823, Cell:
+                671-487-7840</p>
+            <p>Aircrew Flight Equipment (AFE, Army ALSE, Navy PR) NCOICs contact 36 OSS/OSXL for
+                requirements, deliverables, and turn-over/initiation of programs (CA/CRL and Munitions) (36
+                OSS/OSXL, DSN: 366-1752)</p>
+            <p>Andy South/Northwest Field coordination memos (36 CRG, 366-2128)</p>
+        
+            <button class="prev-button" data-target="arc-guidelines-content">Previous</button>
+            <button class="next-button" data-target="page-2-content">Next</button>
+        </div>
+
+
+        <!-- Content for Page 2 -->
+        <div id="page-2-content" class="content-div" style="display:none;">
+            <h2>AO: April 2023</h2>
+            <p>Vehicle Control Officer Letter (Contract Trans, 366-2021/Contract QA (36 LRS/LGRS, 366-
+                2294/4307)</p>
+            <p>All units that will have an aircraft maintenance support element regardless of size are required to
+                review and comply with the Andersen Maintenance Reception Guide, attached to the Reference
+                section in this ARC</p>
+            <p>Munitions Storage Agreement (36 MUNS/MXWCC,366-5166/4925/36muns.storage@us.af.mil)</p>
+            <p>Munitions Entry Authorization Listing (36 MUNS/MXWKA,366-6300/ 36muns-control@us.af.mil)</p>
+            <p>Units requiring Fuel Cell Maintenance must provide a Master Entry Plan, Special Cert Roster, and
+                respirator fit test to 36 WG Safety and 36 MXS Accessories Flight (36 WG Safety, 366-7233/ 36
+                MXS Accessories, 366-3159)</p>
+            <p>Units requesting Special Use Airspace (SUA: ATCAA, Military Training Route (IR-983), Warning Areas
+                (W-11, W-12, W-13, W-517), and/or Restricted Areas (R-7201 aka FDM)) require a DCAST account.
+                Organizations that intend to conduct training in the Mariana Islands Training and Testing Area, Mariana
+                Islands Range Complex Special Use Airspace Areas, or the Land-Based Training Areas on Guam or the
+                Commonwealth of the Northern Mariana Islands must review the references on the MIRC Range page located
+                on the Data Collection and Scheduling Tool (DCAST) webpage and contact MIRC OPS for coordination and
+                approvals. For ground or air training on Northwest Field on Andersen AFB contact
+                36crg.xp.planning@us.af.mil</p>
+            <p>Follow-up on all funding documents (MIPRs), purchases, and contracts are in place through the
+                appropriate agencies to meet your need dates.</p>
+            <p>Funding documentation for all foreign visitors/ACSA’s (36 LRS/LGRDX, 366-1769)</p>
+            <p>Visiting unit financial POC has access to USAF Financial Management Systems if staying for more
+                than 180 days (36 CPTS/FMA, 36cpts.fma@us.af.mil, 366-5887)</p>
+            <p>Naval Facilities Engineering Command (NAVFAC) Marianas. Final environmental support
+                charges will be calculated and the unit will be refunded the amount of funds remaining or will be
+                billed for additional charges. Please note that AAFB does not provide Hazmat lockers.
+                Additionally, all Hazardous Material brought to AAFB must be tracked through EESOH-MIS and
+                36 LRS/Invicta Defense.
+                1. Forward projected waste streams and quantities to AAFB Hazardous Waste Program Manager
+                and Alternates via email for cost estimates (see below for contact information).
+                2. Funding requests for approved hazardous waste cost estimates and associated funding
+                documents is initiated and routed through ieFACMAN eTracker. Funding for HW support must
+                be accepted prior to services.
+                3. Once the funding document is approved, please contact LMS Hazwaste Operations by
+                phone at 339-2422/2429 or via email to LMSHW@LMSFM.com to coordinate the
+                setup of an initial accumulation point, receive waste disposal forms, and submit copies
+                of hazardous waste training certificates.
+                Environmental Support Service Contacts: Hazardous Waste Program Manager:
+                Ms. Luzviminda “Vimen” Duvall
+                Email: Luzviminda.duvall.1@us.af.mil
+                Phone: (671) 366-6019
+                Alternate Hazardous Waste Program Manager: Ms. Lorena Murer
+                Email: Lorena.murer.1@us.af.mil Phone: (671) 366-1851
+                Alternate Hazardous Waste Program Manager: Ms. Layli Terill
+                Email: layli.terrill@us.af.mil Phone: (671) 366-1850</p>
+            <p>Due to joint-basing requirements, a funding document (DD Form 448 MIPR) for facilities
+                Maintenance services provided by 36 CES (e.g., generator support, power hook-up, and
+                additional refuse containers) is required to NAVFAC Marianas. Submit MIPR with total
+                estimated price to NAVFAC Marianas NWCF, PSC 455 Box 195, FPO AP 96540 2937,</p>
+            
+            <button class="prev-button" data-target="page-1-content">Previous</button>
+            <button class="next-button" data-target="page-3-content">Next</button>
+        </div>
+
+        <!-- Repeat for other pages -->
+        <div id="page-3-content" class="content-div" style="display:none;">
+            <!-- Page 3 content goes here -->
+        </div>
+
+        <div id="page-4-content" class="content-div" style="display:none;">
+            <!-- Page 4 content goes here -->
+        </div>
+
+        <div id="page-5-content" class="content-div" style="display:none;">
+            <!-- Page 5 content goes here -->
+        </div>
+</body>
+
+</html>

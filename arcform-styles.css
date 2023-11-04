@@ -1,0 +1,382 @@
+.sidebar {
+    flex: 0 0 260px; /* Flex-grow, flex-shrink, flex-basis */
+    padding: 20px; /* adjust padding as needed */
+    /* You can set a fixed width or use flex-basis */
+    /* Remove margin-right if you're using gap in .arc-form-content */
+    margin-top: 30px; /* Adjust this value to move the container down */
+}
+
+.sidebar > ul > li > ul {
+    padding-top: 0;
+    margin-top: -10px;
+}
+
+.sidebar > ul > li {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.sidebar ul ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e1e1;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    color: #999;  /* Lighter text color */
+}
+
+.sidebar li:hover {
+    color: #333;  /* Darker text color on hover */
+    background-color: transparent;
+}
+
+.sidebar li > ul > li.active::before, .sidebar li.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20%;       /* Adjust as per your preference */
+    bottom: 20%;    /* Adjust as per your preference */
+    width: 4px;
+    background-color: #007BFF;
+}
+
+.sidebar li.active {
+    background-color: #f4f4f4; /* Or your chosen highlight color */
+    color: #333; /* Or your chosen active state text color */
+}
+
+form {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #e1e1e1;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.arrow {
+    display: inline-block;
+    z-index: 1000;
+    margin-left: 5px;
+    transition: transform 0.3s;
+    padding: 0 5px;
+}
+
+.collapsible .content {
+    display: none;
+}
+
+.collapsible.active .content {
+    display: block;
+}
+
+.collapsible.active .arrow {
+    transform: rotate(-90deg);
+}
+
+.collapsible > span {
+    position: relative;
+    z-index: 2;
+    padding-right: 5px;
+}
+
+.sidebar li > a, .sidebar li > span {
+    position: relative;
+    z-index: 3;     /* Setting z-index higher than the blue bar's pseudo-element */
+}
+
+.sidebar li > ul > li:first-child {
+    margin-top: 30px; /* Adjust as needed */
+}
+
+.arc-form-content {
+    display: flex;
+    max-width: 1200px; /* This should match the max-width of your header for alignment */
+    margin: 30px auto; /* This centers the container and moves it down */
+    padding: 20px; /* Adjust or remove padding as necessary */
+    gap: 20px; /* This adds space between the sidebar and content */
+    margin-top: 40px; /* Adjust this value to move the container down */
+}
+
+#arc-guidelines-content {
+    flex-grow: 1; /* Allows the content to take the available space */
+    max-width: 66%; /* Adjust as necessary, restricts the maximum width of the content */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+
+
+.welcome-content {
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    max-width: none;
+    width: 50%;
+    padding: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-right: initial;
+    padding: 60px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 160;
+    background-color: #ffffff /* Or any other hex code you choose */
+
+}
+.section-title {
+    font-size: 24px; 
+    color: #242424    /* Darker color  */
+}
+
+.section-content {
+    font-size: 16px;      
+    line-height: 1.6;     
+    color: #555;          
+    margin-bottom: 30px;  
+    
+}
+
+.title {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 0.05em; /* Adjust based on visual perception */
+    text-transform: none; /* Adjust if needed */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+
+
+}
+
+.intro-text, .content-div p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+/* welcome content */
+.intro-text {
+    margin-bottom: 30px;
+    color: #777;
+    text-align: left;
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+
+
+.thanks {
+    margin: 0; /* remove margin from the p element */
+    font-style: italic;
+    color: #777;
+}
+
+.thanks-and-button {
+    display: flex;
+    align-items: center; /* vertically center the items */
+    justify-content: center; /* horizontally center the items */
+    gap: 20px; /* add some space between the text and the button */
+}
+
+
+.start-button {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+    background-color: #f48024; /* A contrasting color */
+    border-radius: 0.2px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.start-button:hover {
+    background-color: #005a99;
+    transition: background-color 0.3s ease; /* for smooth transition */
+    transform: translateY(-2px); /* NEW */
+
+}
+
+
+.next-button,
+.prev-button {
+    padding: 10px 20px;
+    margin: 10px; /* Adjust as needed */
+    border: none;
+    color: #fff;
+    background-color: #5cb85c; /* Green for next button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-decoration: none; /* If you are using <a> tags instead of <button> */
+    outline: none; /* Removes the outline on focus for cleaner look */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.prev-button {
+    background-color: #f0ad4e; /* Orange for previous button */
+}
+
+.next-button:hover,
+.prev-button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.next-button:active,
+.prev-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content-div {
+    padding: 20px;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+
+#arc-guidelines-content,
+.content-div {
+    flex-grow: 1; /* Allow the content to grow and fill the available space */
+    /* The width will now be controlled by the flex properties */
+    padding-left: 20px; /* Add padding inside the content */
+    margin-top: 40px; /* Adjust this value to move the container down */
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        flex: 0 0 150px; /* Adjust sidebar width for smaller screens */
+    }
+
+    .arc-form-content {
+        flex-direction: column; /* Stack the sidebar and content on smaller screens */
+    }
+
+    #arc-guidelines-content,
+    .content-div {
+        padding: 0; /* You might want to remove padding on smaller screens */
+    }
+}
+
+/* Adjustments for full-width screens */
+@media screen and (min-width: 1200px) {
+    .arc-form-content {
+        padding: 0; /* Removes padding on larger screens for full-width content */
+    }
+
+    #arc-guidelines-content,
+    .content-div {
+        padding-left: 40px; /* Adjust the padding to match the layout on larger screens */
+    }
+}
+
+#arc-guidelines-content,
+.content-div {
+    max-width: calc(100% - 240px); /* Assuming sidebar is 200px + 20px padding on each side */
+}
+
+
+/* Main content base styling */
+.content-div {
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a; /* A softer shade of black for better legibility */
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content-div h1, 
+.content-div h2, 
+.content-div h3 {
+    font-weight: 700; /* Roboto's bold weight */
+    color: #333; /* Even darker for headings for contrast */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.content-div h1,
+.content-div h2,
+.content-div h3 {
+    color: #3f729b; /* A subtler blue */
+}
+/* Paragraphs */
+.content-div p {
+    font-weight: 400; /* Roboto's regular weight */
+    margin-bottom: 15px; /* Increased margin for better paragraph separation */
+}
+/* Buttons */
+.content-div .next-button,
+.content-div .prev-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.content-div .next-button:hover,
+.content-div .prev-button:hover {
+    background-color: #0056b3; /* A darker shade for hover state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*for smaller screens */
+@media screen and (max-width: 768px) {
+    .arc-form-content {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    #arc-guidelines-content,
+    .content-div {
+        width: auto;
+        padding: 10px;
+    }
+
+    /* Adjust font sizes for smaller screens if necessary */
+    .title {
+        font-size: 1.5em;
+    }
+
+    .intro-text {
+        font-size: 0.9em;
+    }
+}
+
+button:hover {
+    background-color: #d9534f; /* Example for a hover state */
+}
+
+button:active {
+    background-color: #c9302c; /* Example for an active state */
+}

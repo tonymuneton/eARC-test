@@ -1,0 +1,361 @@
+styles.css
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Futura;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    font-family: Futura;
+    background-color: #333;
+    padding: 0.6rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container, 
+.main-content, 
+.button-list {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.middle-content, .icon-section {  
+    background-color: #ffffff;
+    padding: 2rem 0;
+}
+
+.header-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-size: 40px;
+    margin-left: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.logo-img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;  
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.main-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    flex-shrink: 0;
+    margin-right: 2rem;
+    margin-top: 10px;
+}
+
+.image-container img {
+    max-width: 45%;
+    height: auto;
+}
+
+.cta-button {
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.cta-button:hover {
+    background-color: #005a99;
+}
+
+/* changes here */
+
+.button-list {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -0.10rem;
+    padding-left: 50px;
+    padding-top: rem;
+    padding-bottom: 0rem;
+    margin: 0 auto;
+}
+
+.icon-button, .icon-button-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;  /* Adjusted margin-right for consistency */
+    font-family: Futura Medium;
+    justify-content: center;
+    font-size: 18px; 
+    position: relative;
+}
+
+
+.icon-button img, .icon-button-book img {
+    height: 80px;    /* Example height, adjust as needed */
+    width: auto; 
+}
+
+.icon-button {
+    margin-left: 100px;  
+    margin-right: 100px;
+    font-size: 18px;      
+    font-family: Futura Medium;   
+}
+
+.icon-button-book {
+    margin-left: 100px;  
+    font-family: Futura Medium;   
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from its parent */
+}
+
+.icon-button span, .icon-button-book span {
+    line-height: 1.2;  /* Add this for consistent line spacing */
+    margin: 0;         /* Remove any margin */
+    padding: 0; 
+}
+
+/* changes here */
+.icon-section {
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.icon-button:first-of-type img {
+    width: 140px; 
+    height: 140px; 
+}
+
+.icon-button:first-of-type {
+    justify-content: center; 
+}
+
+.icon-button:hover img, .icon-button-book:hover img {
+    filter: brightness(0.8);  /* Darkens the image a bit when hovered */
+}
+
+.icon-button:hover::before, .icon-button-book:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(85, 85, 85, 0.2); /* This is the #555 color from your nav hover with 50% opacity */
+    z-index: 1;
+}
+
+/* ... your existing styles ... */
+
+.cta-button {
+    padding: 12px 24px;
+    padding-left: 0.5rem;  /* Maintain the original padding on the left */
+    padding-right: 1.5rem; /* Increase the padding on the right */
+    padding-top: 0.5rem;   /* Maintain the original padding on the top */
+    padding-bottom: 0.5rem;    background-color: #007acc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 1px;
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;               /* NEW */
+    font-weight: bold;            /* NEW */
+    text-align: center;           /* NEW */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* NEW */
+    transition: background-color 0.3s, transform 0.3s; /* UPDATED */
+    position: relative;
+    width: 232px;  /* Adjust as needed */
+    height: 55px; /* Adjust as needed */    
+}
+
+
+.cta-button:hover {
+    background-color: #005a99;
+    transform: translateY(-2px); /* NEW */
+}
+
+/* ... the rest of your styles ... */
+
+
+.feature-button {
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.feature-button:hover {
+    background-color: #005a99;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    justify-content: space-between; /* New line to add */
+}
+
+/* Reverse layout for alternating sections */
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1; /* It takes up the remaining space within the container */
+    max-width: none; /* Remove the maximum width restriction */
+    width: auto; /* It takes the width of the content */
+    margin-right: 0; /* Remove the right margin */
+    padding-left: 0; /* Remove or adjust the left padding as necessary */
+}
+
+.content-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for headings */
+}
+
+.content-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Slightly lighter text for paragraphs */
+    
+}
+
+.content-image img {
+    width: 100%; /* Ensures the image is not wider than its container */
+    max-height: 290px; /* Corrected the max-height value */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Image will cover the entire container while maintaining its aspect ratio */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .content-text, .content-image {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+.light-bg {
+    background-color: #f9f9f9; /* Light grey */
+}
+.dark-bg {
+    background-color: #e9e9e9; /* Darker grey */
+}
+.content-section2 {
+    background-color: #f4f4f4; /* Same grey background color as icon-section */
+    /* ... (any additional styles you want) ... */
+}
