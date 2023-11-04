@@ -49,7 +49,7 @@
 }
 
 .sidebar li.active {
-    background-color: #f4f4f4; /* Or your chosen highlight color */
+    background-color: transparent; /* Or set to #fff for white */
     color: #333; /* Or your chosen active state text color */
 }
 
