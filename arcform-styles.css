@@ -1,9 +1,15 @@
 .sidebar {
-    flex: 0 0 260px; /* Flex-grow, flex-shrink, flex-basis */
+    flex: 0 0 360px; /* Flex-grow, flex-shrink, flex-basis */
+    margin-right: -120px;
     padding: 20px; /* adjust padding as needed */
-    /* You can set a fixed width or use flex-basis */
-    /* Remove margin-right if you're using gap in .arc-form-content */
-    margin-top: 30px; /* Adjust this value to move the container down */
+    margin-left: -230px; /* Push sidebar to the left */
+    margin-top: 57px;
+    border-left: 0px solid #333; /* Adjust color and size as needed */
+    box-sizing: border-box; /* Ensures the border is included within the element's width */
+    font-size: 14px; /* or any other size you prefer */
+    padding-left: 50px;
+    font-family: "Segoe UI", "Segoe WPC", sans-serif;
+
 }
 
 .sidebar > ul > li > ul {
@@ -21,6 +27,9 @@
 .sidebar ul ul {
     padding-left: 20px;
 }
+.sidebar ul ul li {
+    font-size: 12px; /* Set the desired font size for submenu items */
+  }
 
 .sidebar li {
     list-style-type: none;
@@ -30,6 +39,10 @@
     transition: background-color 0.3s, color 0.3s;
     position: relative;
     color: #999;  /* Lighter text color */
+}
+.sidebar li:hover,
+.sidebar li.active {
+    background-color: transparent; /* No background color on hover/active */
 }
 
 .sidebar li:hover {
@@ -49,7 +62,6 @@
 }
 
 .sidebar li.active {
-    background-color: transparent; /* Or set to #fff for white */
     color: #333; /* Or your chosen active state text color */
 }
 
@@ -109,11 +121,12 @@ legend {
 
 .arc-form-content {
     display: flex;
-    max-width: 1200px; /* This should match the max-width of your header for alignment */
-    margin: 30px auto; /* This centers the container and moves it down */
-    padding: 20px; /* Adjust or remove padding as necessary */
-    gap: 20px; /* This adds space between the sidebar and content */
-    margin-top: 40px; /* Adjust this value to move the container down */
+    margin-left: 50;
+    margin-right: auto;
+    max-width: 1250px; /* Adjust the maximum width as needed */
+    margin: 30px auto; /* Keep the top margin and center align the whole flex container */
+    padding: 0; /* Remove padding if you're not using it */
+    gap: 0px; /* This adds space between the sidebar and the content */
 }
 
 #arc-guidelines-content {
@@ -257,11 +270,30 @@ legend {
 }
 
 .content-div {
+    flex-grow: 1; /* Allow the content to take the available space */
     padding: 20px;
-    max-width: 800px; /* Adjust as needed */
+    max-width: calc(100% - 300px); /* Adjust this value based on the sidebar's width */
     margin: 0 auto;
 }
+.content-div p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px; /* Standard size for readability */
+    line-height: 1.6; /* Adequate line height for reading comfort */
+}
 
+/* Targeting headers within the main content, excluding the sidebar */
+.arc-form-content .content-div h1,
+.arc-form-content .content-div h2,
+.arc-form-content .content-div h3,
+.arc-form-content .content-div h4,
+.arc-form-content .content-div h5,
+.arc-form-content .content-div h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: 400; /* Regular weight for better readability */
+    letter-spacing: normal; /* Default spacing for better readability */
+}
 
 #arc-guidelines-content,
 .content-div {
