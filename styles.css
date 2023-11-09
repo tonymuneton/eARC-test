@@ -295,6 +295,13 @@ nav a:hover {
     padding: 50px 0;
 }
 
+.content-section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
 .content-container {
     display: flex;
     align-items: center;
@@ -330,7 +337,14 @@ nav a:hover {
     
 }
 
-.content-image img {
+.content-section .content-image img {
+    width: 100%; /* Ensures the image is not wider than its container */
+    max-height: 290px; /* Corrected the max-height value */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Image will cover the entire container while maintaining its aspect ratio */
+}
+
+.content-section2 .content-image img {
     width: 100%; /* Ensures the image is not wider than its container */
     max-height: 290px; /* Corrected the max-height value */
     height: auto; /* Maintains the aspect ratio */
