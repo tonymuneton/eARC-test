@@ -233,3 +233,41 @@ input[type="date"] {
 .arc1-next-button:hover {
     background-color: #003366;
 }
+
+
+
+
+.unit-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* This helps with consistent column widths */
+}
+
+.unit-info-table th, .unit-info-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.unit-info-table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    width: 15%; /* Adjust if needed */
+}
+
+.unit-info-table td {
+    width: 35%; /* Adjust if needed */
+}
+
+.unit-info-table input[type="text"],
+.unit-info-table input[type="tel"],
+.unit-info-table input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
