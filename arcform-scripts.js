@@ -108,6 +108,7 @@ function setActiveSidebarItem(targetId) {
             collapsible.classList.add('active');
         }
     }
+    
 
     // Initially show the welcome content
     toggleContent('welcome-content');
