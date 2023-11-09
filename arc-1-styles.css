@@ -160,48 +160,76 @@
 
  /* Step 3 Styles */
 
-.form-step h2 {
-    text-align: center; /* Center align the h2 header if desired */
-    font-weight: bold; /* Make the header bold */
+/* Add this CSS to your existing stylesheet to style the form elements */
+.form-step {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Number of Personnel */
-.form-row-step3 {
+.form-heading {
+    margin-bottom: 30px;
+}
+
+.form-row {
     display: flex;
-    justify-content: space-between; /* This will place the two divs side by side */
-    margin-bottom: 20px; /* Add some space below the row */
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.form-column-step3 {
-    flex: 1; /* Each column will take up equal space */
-    margin-right: 10px; /* Space between the columns */
+.form-column {
+    flex: 1;
+    margin-right: 10px;
 }
 
-.form-column-step3:last-child {
-    margin-right: 0; /* No margin on the right for the last column */
+.form-column:last-child {
+    margin-right: 0;
 }
 
-/* Dates */
 .form-dates-row {
-    display: block; /* Stack the date inputs vertically */
+    margin-bottom: 20px;
 }
 
-.form-dates-column label {
-    display: block; /* Ensure the label is on its own line */
-    margin-bottom: 5px; /* Space between label and input */
+.form-dates-heading {
+    margin-bottom: 10px;
 }
 
-.form-dates-column input[type="date"] {
-    width: 100%; /* Full width of the column */
-    padding: 10px; /* Padding inside the input */
-    margin-bottom: 10px; /* Space after the input */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 4px; /* Rounded corners for the inputs */
-}
-
-/* If you have a specific maximum width you'd like for the dates column */
 .form-dates-column {
-    max-width: 500px; /* Or whatever maximum width you prefer */
-    margin: auto; /* This will center the column if it's less than 100% width */
+    margin-bottom: 10px;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.arc1-prev-button,
+.arc1-next-button {
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.arc1-prev-button:hover,
+.arc1-next-button:hover {
+    background-color: #003366;
+}
