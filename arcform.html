@@ -442,7 +442,7 @@
                     </div>
                 </div>
                 <button class="prev-button" data-target="page-5-content">Previous</button>
-                <button type="button" class="arc1-next-button" data-next="step2">Continue</button>
+                <button type="button" class="arc1-next-button" data-next="step2">Save & Continue</button>
             </div>
 
 
@@ -464,7 +464,7 @@
                 <input type="text" id="number-of-aircraft" name="number-of-aircraft" required>
 
                 <button type="button" class="arc1-prev-button" data-prev="step1">Back</button>
-                <button type="button" class="arc1-next-button" data-next="step3">Continue</button>
+                <button type="button" class="arc1-next-button" data-next="step3">Save & Continue</button>
             </div>
 
 
@@ -514,24 +514,72 @@
                 <!-- Navigation Buttons -->
                 <div class="form-navigation">
                     <button type="button" class="arc1-prev-button" data-prev="step2">Back</button>
-                    <button type="button" class="arc1-next-button" data-next="step4">Continue</button>
+                    <button type="button" class="arc1-next-button" data-next="step4">Save & Continue</button>
                 </div>
             </div>
 
+            <!-- Step 4 -->
+            <div id="step4" class="form-step" style="display:none;">
+                <h1>UNIT INFORMATION</h1>
 
+                <table class="unit-info-table">
+                    <tr>
+                        <th>Logistics POC:</th>
+                        <td><input type="text" id="logistic-poc" name="logistic-poc"></td>
+                        <th>DSN Phone:</th>
+                        <td><input type="tel" id="logistic-phone" name="logistic-phone"></td>
+                        <th>Email Address:</th>
+                        <td><input type="email" id="logistic-email" name="logistic-email"></td>
+                    </tr>
+                    <tr>
+                        <th>Operations POC:</th>
+                        <td><input type="text" id="operations-poc" name="operations-poc"></td>
+                        <th>DSN Phone:</th>
+                        <td><input type="tel" id="operations-phone" name="operations-phone"></td>
+                        <th>Email Address:</th>
+                        <td><input type="email" id="operations-email" name="operations-email"></td>
+                    </tr>
+                    <tr>
+                        <th>Maintenance POC:</th>
+                        <td><input type="text" id="maintenance-poc" name="maintenance-poc"></td>
+                        <th>DSN Phone:</th>
+                        <td><input type="tel" id="maintenance-phone" name="maintenance-phone"></td>
+                        <th>Email Address:</th>
+                        <td><input type="email" id="maintenance-email" name="maintenance-email"></td>
+                    </tr>
+                    <tr>
+                        <th>Finance POC:</th>
+                        <td><input type="text" id="finance-poc" name="finance-poc"></td>
+                        <th>DSN Phone:</th>
+                        <td><input type="tel" id="finance-phone" name="finance-phone"></td>
+                        <th>Email Address:</th>
+                        <td><input type="email" id="finance-email" name="finance-email"></td>
+                    </tr>
+                    <tr>
+                        <th>WG/CC:</th>
+                        <td><input type="text" id="wg-cc" name="wg-cc"></td>
+                        <th>DSN Phone:</th>
+                        <td><input type="tel" id="wg-cc-phone" name="wg-cc-phone"></td>
+                        <th>Email Address:</th>
+                        <td><input type="email" id="wg-cc-email" name="wg-cc-email"></td>
+                    </tr>
+                </table>
+                <div class="form-navigation-buttons">
+                    <button type="button" class="arc1-prev-button">Back</button>
+                    <button type="button" class="arc1-next-button">Save & Continue</button>
+                </div>
 
+                <!-- Additional steps go here -->
 
-            <!-- Additional steps go here -->
-
-            <!-- Final step -->
-            <div id="stepFinal" class="form-step" style="display:none;">
-                <h2>Finalize</h2>
-                <!-- Your form fields for final step -->
-                <!-- ... -->
-                <button type="button" class="arc1-prev-button" data-prev="stepN">Back</button>
-                <button type="submit">Submit</button>
+                <!-- Final step -->
+                <div id="stepFinal" class="form-step" style="display:none;">
+                    <h2>Finalize</h2>
+                    <!-- Your form fields for final step -->
+                    <!-- ... -->
+                    <button type="button" class="arc1-prev-button" data-prev="stepN">Back</button>
+                    <button type="submit">Submit</button>
+                </div>
             </div>
-        </div>
 
 
 </body>
