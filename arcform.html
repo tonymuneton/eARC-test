@@ -8,9 +8,12 @@
     <title>eARC - ARC Form</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="arcform-styles.css?v=1.1">
+    <link rel="stylesheet" href="arc-1-styles.css"> <!-- New stylesheet for ARC 1 -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="arcform-scripts.js" defer></script>
+    <script src="arc-step-navigation.js" defer></script>
+
     <style>
 
     </style>
@@ -56,7 +59,7 @@
                     </ul>
                 </li>
                 </li>
-                <li>ARC 1</li>
+                <li data-target="arc-1-content">ARC 1</li> <!-- Add the data-target attribute here -->
                 <li>ARC 2</li>
                 <li>ARC 3</li>
                 <li>ARC 3</li>
@@ -69,29 +72,21 @@
 
         <div id="welcome-content" class="content-div" style="display:block;">
             <h1 class="title">Welcome to the eARC Prototype</h1>
-
             <p class="intro-text">
-                Thank you for visiting the eARC platform! Please note that this version is a prototype and a work in
-                progress. We are actively developing the eARC to improve communication and efficiency for Andersen Air
-                Force Base personnel and partners.
+                Thank you for visiting the eARC platform! This version is a prototype and a work in progress. We are actively developing the eARC to improve communication and efficiency for Andersen Air Force Base personnel and partners.
             </p>
 
             <div class="section why-earc">
                 <h2 class="title">Why eARC Matters</h2>
                 <p class="intro-text">
-                    The eARC project aims to revolutionize the Andersen Reception Checklist process. By reducing email
-                    reliance and introducing a user-friendly platform, we aim to streamline communication, enhance
-                    collaboration, and save valuable time for our dedicated personnel. Your feedback and support are
-                    crucial as we work towards creating a more efficient and effective solution.
+                    The eARC project aims to revolutionize the Andersen Reception Checklist process. By reducing email reliance and introducing a user-friendly platform, we aim to streamline communication, enhance collaboration, and save valuable time for our dedicated personnel. Your feedback and support are crucial as we work towards creating a more efficient and effective solution.
                 </p>
             </div>
 
             <div class="section feedback">
                 <h2 class="title">Your Feedback Matters</h2>
                 <p class="intro-text">
-                    Your insights and suggestions play a vital role in shaping the future of the eARC. We welcome your
-                    feedback as we continue to refine and enhance this platform. Together, we can make a significant
-                    difference in improving operations and collaboration at Andersen Air Force Base.
+                    Your insights and suggestions play a vital role in shaping the future of the eARC. We welcome your feedback as we continue to refine and enhance this platform. Together, we can make a significant difference in improving operations and collaboration at Andersen Air Force Base.
                 </p>
             </div>
 
@@ -106,7 +101,7 @@
         <div id="arc-guidelines-content" class="content-div" style="display:none;">
             <h1>ANDERSEN AFB RECEPTION CHECKLIST</h1>
             <h2>AS OF: April 2023</h2>
-
+            <!-- This creates a horizontal line -->
             <p><strong>NON-US/FOREIGN UNITS</strong> request to operate on AAFB for training when invited as a
                 participant in
                 official US exercises. If there are no US aviation assets with thatspecific exercise on AAFB, a
@@ -117,7 +112,6 @@
                 out EALs, FVRs, and flight line entry request paperwork with a current phone number and email.
                 *A LIAISON is not required for RON or ferry flight operations.
             </p>
-
             <p>To ensure proper coordination installation support for your mission, the following checklist must be
                 thoroughly reviewed, completed, and provided to 36 LRS Readiness Flight (36 LRS/LGRDX) 120 day
                 out from execution. IDRC will coordinate all checklist requests for you and provide your unit with the
@@ -125,6 +119,7 @@
                 date.
                 All attachments referenced in this checklist are at the end of the document.
             </p>
+
             <p>It is the responsibility of the both the incoming units to follow up with the AAFB Reception Working
                 Group (RWG) reps to obtain a status update on their requests. The RWG reps will work the support
                 request at the direction of IDRC and may need to ask the incoming units specific questions about their
@@ -153,10 +148,21 @@
             <p>The following timeline will facilitate your mission success. Many of these items are time sensitive
                 and failure to complete them as indicated may directly affect your support.
             </p>
-            <h3>***Units MUST bring their own GPC cardholders to Andersen AFB for micro-purchases***
+            <h3>
+                <span style="background-color: #fff9c4;  padding: 2px 5px; display: inline;">
+                    ***Units MUST bring their own GPC cardholders to Andersen AFB for micro-purchases***
+                </span>
             </h3>
+            
             <p>Upon completion of your exercise, submit an After Action Report to the 36 WG/IDRC.
             </p>
+            <button class="next-button" data-target="page-1-content">Next</button>
+
+        </div>
+
+        <!-- Content for Page 1 -->
+        <div id="page-1-content" class="content-div" style="display:none;">
+
             <h2>NLT 150-180 DAYS PRIOR TO ARRIVAL</h2>
             <p>
                 All units who require changes to Andersen AFB network infrastructure MUST submit the
@@ -168,21 +174,12 @@
                 (671) 362-2703 or via email 36CS.SCXP.RWG@us.af.mil for further information. COMM: (671)
                 362-2703 or via email 36CS.SCXP.RWG@us.af.mil for further information
             </p>
-
             <h2>NLT 120-90 DAYS PRIOR TO ARRIVAL</h2>
             <p>
                 ATR UNITS - All completed ARCS must be submitted through USFJ PRIOR to turn into AAFB. Checklist must be
                 completed to be as best extent as possible and sent to the 36 WG/IDRC box at 36wg.idrc@us.af.mil
             </p>
-
-            <button class="next-button" data-target="page-1-content">Next</button>
-
-        </div>
-
-        <!-- Content for Page 1 -->
-        <div id="page-1-content" class="content-div" style="display:none;">
-            <h2>AS OF: April 2023</h2>
-            <h3>NLT 90 DAYS PRIOR TO ARRIVAL</h3>
+            <h2>NLT 90 DAYS PRIOR TO ARRIVAL</h2>
             <p>Formulate requirements necessary for financial management and contracting support; Funding for
                 mobile office workspace trailers required (36 OG/RA, 366-3665)
             </p>
@@ -197,9 +194,9 @@
             <p>All units requesting the usage of the Pacific Readiness Training Center-Andersen(Northwest Field)
                 must submit a comprehensive Concept of Operations and Coordination Letter to 36 CRG/XP for
                 coordination. Send initial notification to 36CRG.XP.Planning@us.af.mil. Templates and further
-                instructions will be provided by 36 CRG/XP upon receipt of initial request. 
+                instructions will be provided by 36 CRG/XP upon receipt of initial request.
             </p>
-            <h3>NLT 60 DAYS PRIOR TO ARRIVAL</h3>
+            <h2>NLT 60 DAYS PRIOR TO ARRIVAL</h2>
             <p>Email complete checklist to IDRC and follow-up with a phone call (addresses and numbers above)</p>
             <p>Create and submit a Mass Account worksheet attached to account access letters; 1 per unit to
                 36 CS/RWG</p>
@@ -209,106 +206,398 @@
             <p>USAF Units: Submit IMSR for WRM/AGE/MUNS assets NLT 60 days prior to arrival. Send an
                 UNSIGNED IMSR to 36 LRS/WRM box @ 36lrs.wrm@us.af.mil or 36 WG/IDRC box at
                 36wg.idrc@us.af.mil. IMSR must be approved by WRMPM before unit may use them.</p>
-            <p>All units requiring transportation services need to initiate conversation with the 36 LRS/LGRP
-                CORs to inform them of initial transportation needs and to complete an Statement of Work (SOW).
-                This includes transportation of cargo upon arrival/departure and transportation of PAX during your
-                stay at Andersen. (366-2033/2294/5854/3739) (36lrs.lgrp@us.af.mil)</p>
+            CORs to inform them of initial transportation needs and to complete an Statement of Work (SOW).
+            This includes transportation of cargo upon arrival/departure and transportation of PAX during your
+            stay at Andersen. (366-2033/2294/5854/3739) (36lrs.lgrp@us.af.mil)</p>
             <p>Foreign nations under the Acquisition and Cross Servicing Agreement (ACSA) program must
                 submit a Mutual Logistics Support (MLS) form for services requested for services to be received. At
                 the end of the visit charges will be ascertained and MLS will be authenticated with the ACSA
                 managers on base. POC’s: Charles E. Kucharski (charles.kucharski@us.af.mil) DSN: 366-6583.</p>
-            <h3>NLT 30 DAYS PRIOR TO ARRIVAL</h3>
-            <p>Contact IDRC for current status of checklist requests</p>
-            <p>Provide IDRC with passenger manifest ASAP, if on AAFB for contingency support</p>
-            <p>For all reservations, Andersen AFB Lodging requires incoming units to submit a list of occupant
-                NAMES. Without info, check-in may not be possible depending on hotel. (Template for lodging is
-                on page 17, along with email address for submission)(36 FSS/SVML, 362-5511 or 362-5801)</p>
-            <p>Foreign Visitors Request (FVR)/Information Protection (36 WG/IP, 366-5108)
-                (36sfs.vcc@us.af.mil) (36wg.ip.1@us.af.mil)</p>
-            <p>Restricted area Entry Authorization List memo (36 OSS/OSAM, 366-4188/1010); send all EALs to
-                36OSS.CSS@us.af.mil OSS/CC is the approval authority for the airfield, WOC and
-                Tropicana.</p>
-            <p>Flying Units -Patriot Excalibur (PEX) support (36 OSS/OSX, 366-3016/5221/2823, Cell:
-                671-487-7840</p>
-            <p>Aircrew Flight Equipment (AFE, Army ALSE, Navy PR) NCOICs contact 36 OSS/OSXL for
-                requirements, deliverables, and turn-over/initiation of programs (CA/CRL and Munitions) (36
-                OSS/OSXL, DSN: 366-1752)</p>
-            <p>Andy South/Northwest Field coordination memos (36 CRG, 366-2128)</p>
-        
+
             <button class="prev-button" data-target="arc-guidelines-content">Previous</button>
             <button class="next-button" data-target="page-2-content">Next</button>
         </div>
 
 
         <!-- Content for Page 2 -->
-        <div id="page-2-content" class="content-div" style="display:none;">
-            <h2></h2>
-            <p>Vehicle Control Officer Letter (Contract Trans, 366-2021/Contract QA (36 LRS/LGRS, 366-
-                2294/4307)</p>
-            <p>All units that will have an aircraft maintenance support element regardless of size are required to
-                review and comply with the Andersen Maintenance Reception Guide, attached to the Reference
-                section in this ARC</p>
-            <p>Munitions Storage Agreement (36 MUNS/MXWCC,366-5166/4925/36muns.storage@us.af.mil)</p>
-            <p>Munitions Entry Authorization Listing (36 MUNS/MXWKA,366-6300/ 36muns-control@us.af.mil)</p>
-            <p>Units requiring Fuel Cell Maintenance must provide a Master Entry Plan, Special Cert Roster, and
-                respirator fit test to 36 WG Safety and 36 MXS Accessories Flight (36 WG Safety, 366-7233/ 36
-                MXS Accessories, 366-3159)</p>
-            <p>Units requesting Special Use Airspace (SUA: ATCAA, Military Training Route (IR-983), Warning Areas
-                (W-11, W-12, W-13, W-517), and/or Restricted Areas (R-7201 aka FDM)) require a DCAST account.
-                Organizations that intend to conduct training in the Mariana Islands Training and Testing Area, Mariana
-                Islands Range Complex Special Use Airspace Areas, or the Land-Based Training Areas on Guam or the
-                Commonwealth of the Northern Mariana Islands must review the references on the MIRC Range page located
-                on the Data Collection and Scheduling Tool (DCAST) webpage and contact MIRC OPS for coordination and
-                approvals. For ground or air training on Northwest Field on Andersen AFB contact
-                36crg.xp.planning@us.af.mil</p>
-            <p>Follow-up on all funding documents (MIPRs), purchases, and contracts are in place through the
-                appropriate agencies to meet your need dates.</p>
+        <div id="page-2-content" class="content-div">
+
+            <h2>NLT 30 DAYS PRIOR TO ARRIVAL</h2>
+
+            <p>Contact IDRC for current status of checklist requests</p>
+            <p>Provide IDRC with passenger manifest ASAP if on AAFB for contingency support</p>
+            <p>For all reservations, Andersen AFB Lodging requires incoming units to submit a list of occupant NAMES. Without info, check-in may not be possible depending on hotel. (Template for lodging is on page 17, along with email address for submission)(36 FSS/SVML, 362-5511 or 362-5801)</p>
+            <p>Foreign Visitors Request (FVR)/Information Protection (36 WG/IP, 366-5108) <a href="mailto:36sfs.vcc@us.af.mil">36sfs.vcc@us.af.mil</a> <a href="mailto:36wg.ip.1@us.af.mil">36wg.ip.1@us.af.mil</a></p>
+            <p>Restricted area Entry Authorization List memo (36 OSS/OSAM, 366-4188/1010); send all EALs to <a href="mailto:360SS.CSS@us.af.mil">360SS.CSS@us.af.mil</a> OSS/CC is the approval authority for the airfield, WOC and Tropicana.</p>
+            <p>Flying Units -Patriot Excalibur (PEX) support (36 OSS/OSX, 366-3016/5221/2823, Cell: 671-487-7840)</p>
+            <p>Aircrew Flight Equipment (AFE, Army ALSE, Navy PR) NCOICs contact 36 OSS/OSXL for requirements, deliverables, and turn-over/initiation of programs (CA/CRL and Munitions) (36 OSS/OSXL, DSN: 366-1752)</p>
+            <p>Andy South/Northwest Field coordination memos (36 CRG, 366-2128)</p>
+            <p>Vehicle Control Officer Letter (Contract Trans, 366-2021/Contract QA (36 LRS/LGRS, 366-2294/4307))</p>
+            <p>All units that will have an aircraft maintenance support element regardless of size are required to review and comply with the Andersen Maintenance Reception Guide, attached to the Reference section in this ARC.</p>
+            <p>Munitions Storage Agreement (36 MUNS/MXWCC, 366-5166/4925/36muns.storage@us.af.mil)</p>
+            <p>Munitions Entry Authorization Listing (36 MUNS/MXWKA, 366-6300/36muns-control@us.af.mil)</p>
+            <p>Units requiring Fuel Cell Maintenance must provide a Master Entry Plan, Special Cert Roster, and respirator fit test to 36 WG Safety and 36 MXS Accessories Flight (36 WG Safety, 366-7233/36 MXS Accessories, 366-3159)</p>
+            <p>Units requesting Special Use Airspace (SUA: ATCAA, Military Training Route (IR-983), Warning Areas (W-11, W-12, W-13, W-517), and/or Restricted Areas (R-7201 aka FDM)) require a DCAST account. Organizations that intend to conduct training in the Mariana Islands Training and Testing Area, Mariana Islands Range Complex Special Use Airspace Areas, or the Land-Based Training Areas on Guam or the Commonwealth of the Northern Mariana Islands must review the references on the MIRC Range page located on the Data Collection and Scheduling Tool (DCAST) webpage and contact MIRC OPS for coordination and approvals. For ground or air training on Northwest Field on Andersen AFB contact <a href="mailto:36crg.xp.planning@us.af.mil">36crg.xp.planning@us.af.mil</a>.</p>
+            <p>Follow-up on all funding documents (MIPRs), purchases, and contracts are in place through the appropriate agencies to meet your need dates.</p>
             <p>Funding documentation for all foreign visitors/ACSA’s (36 LRS/LGRDX, 366-1769)</p>
-            <p>Visiting unit financial POC has access to USAF Financial Management Systems if staying for more
-                than 180 days (36 CPTS/FMA, 36cpts.fma@us.af.mil, 366-5887)</p>
-            <p>Naval Facilities Engineering Command (NAVFAC) Marianas. Final environmental support
-                charges will be calculated and the unit will be refunded the amount of funds remaining or will be
-                billed for additional charges. Please note that AAFB does not provide Hazmat lockers.
-                Additionally, all Hazardous Material brought to AAFB must be tracked through EESOH-MIS and
-                36 LRS/Invicta Defense.
-                1. Forward projected waste streams and quantities to AAFB Hazardous Waste Program Manager
-                and Alternates via email for cost estimates (see below for contact information).
-                2. Funding requests for approved hazardous waste cost estimates and associated funding
-                documents is initiated and routed through ieFACMAN eTracker. Funding for HW support must
-                be accepted prior to services.
-                3. Once the funding document is approved, please contact LMS Hazwaste Operations by
-                phone at 339-2422/2429 or via email to LMSHW@LMSFM.com to coordinate the
-                setup of an initial accumulation point, receive waste disposal forms, and submit copies
-                of hazardous waste training certificates.
-                Environmental Support Service Contacts: Hazardous Waste Program Manager:
-                Ms. Luzviminda “Vimen” Duvall
-                Email: Luzviminda.duvall.1@us.af.mil
-                Phone: (671) 366-6019
-                Alternate Hazardous Waste Program Manager: Ms. Lorena Murer
-                Email: Lorena.murer.1@us.af.mil Phone: (671) 366-1851
-                Alternate Hazardous Waste Program Manager: Ms. Layli Terill
-                Email: layli.terrill@us.af.mil Phone: (671) 366-1850</p>
-            <p>Due to joint-basing requirements, a funding document (DD Form 448 MIPR) for facilities
-                Maintenance services provided by 36 CES (e.g., generator support, power hook-up, and
-                additional refuse containers) is required to NAVFAC Marianas. Submit MIPR with total
-                estimated price to NAVFAC Marianas NWCF, PSC 455 Box 195, FPO AP 96540 2937,</p>
-            
-            <button class="prev-button" data-target="page-1-content">Previous</button>
-            <button class="next-button" data-target="page-3-content">Next</button>
+            <p>Visiting unit financial POC has access to USAF Financial Management Systems if staying for more than 180 days (36 CPTS/FMA, <a href="mailto:36cpts.fma@us.af.mil">36cpts.fma@us.af.mil</a>, 366-5887)</p>
+        
+           
+
+
+
+            <!-- Pagination Controls -->
+            <nav class="pagination-controls">
+                <button class="prev-button" data-target="page-1-content">Previous</button>
+                <button class="next-button" data-target="page-3-content">Next</button>
+            </nav>
         </div>
 
-        <!-- Repeat for other pages -->
-        <div id="page-3-content" class="content-div" style="display:none;">
-            <!-- Page 3 content goes here -->
+
+
+        <!-- Content for Page 3 but this a continued version of page 2  -->
+
+        <div id="page-3-content" class="content-div">
+
+            <h2>NLT 30 DAYS PRIOR TO ARRIVAL (Continued)</h2>
+
+            <p>Contact IDRC for current status of checklist requests</p>
+            <p>Provide IDRC with passenger manifest ASAP if on AAFB for contingency support</p>
+            <p>For all reservations, Andersen AFB Lodging requires incoming units to submit a list of occupant NAMES. Without info, check-in may not be possible depending on hotel. (Template for lodging is on page 17, along with email address for submission)(36 FSS/SVML, 362-5511 or 362-5801)</p>
+            <p>Foreign Visitors Request (FVR)/Information Protection (36 WG/IP, 366-5108) <a href="mailto:36sfs.vcc@us.af.mil">36sfs.vcc@us.af.mil</a> <a href="mailto:36wg.ip.1@us.af.mil">36wg.ip.1@us.af.mil</a></p>
+            <p>Restricted area Entry Authorization List memo (36 OSS/OSAM, 366-4188/1010); send all EALs to <a href="mailto:360SS.CSS@us.af.mil">360SS.CSS@us.af.mil</a> OSS/CC is the approval authority for the airfield, WOC and Tropicana.</p>
+            <p>Flying Units -Patriot Excalibur (PEX) support (36 OSS/OSX, 366-3016/5221/2823, Cell: 671-487-7840)</p>
+            <p>Aircrew Flight Equipment (AFE, Army ALSE, Navy PR) NCOICs contact 36 OSS/OSXL for requirements, deliverables, and turn-over/initiation of programs (CA/CRL and Munitions) (36 OSS/OSXL, DSN: 366-1752)</p>
+            <p>Andy South/Northwest Field coordination memos (36 CRG, 366-2128)</p>
+        
+           
+
+            <!-- Instructions Section -->
+            <section class="page2-instructions">
+                <p>
+                    Naval Facilities Engineering Command (NAVFAC) Marianas. Final environmental support charges will be
+                    calculated and the unit will be refunded the amount of funds remaining or will be billed for
+                    additional charges. Please note that AAFB does not provide Hazmat lockers. Additionally, all
+                    Hazardous Material brought to AAFB must be tracked through EESOH-MIS and 36 LRS/Invicta Defense.
+                </p>
+                <ol>
+                    <li>Forward projected waste streams and quantities to AAFB Hazardous Waste Program Manager and
+                        Alternates via email for cost estimates (see below for contact information).</li>
+                    <li>Funding requests for approved hazardous waste cost estimates and associated funding documents
+                        are initiated and routed through ieFACMAN eTracker. Funding for HW support must be accepted
+                        prior to services.</li>
+                    <li>Once the funding document is approved, please contact LMS Hazwaste Operations by phone at
+                        339-2422/2429 or via email to LMSHW@LMSFM.com to coordinate the setup of an initial accumulation
+                        point, receive waste disposal forms, and submit copies of hazardous waste training certificates.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Pagination Controls -->
+            <nav class="pagination-controls">
+                <button class="prev-button" data-target="page-2-content">Previous</button>
+                <button class="next-button" data-target="page-4-content">Next</button>
+            </nav>
         </div>
+
+        
+        
+        <!-- Content for Page 4 -->
 
         <div id="page-4-content" class="content-div" style="display:none;">
-            <!-- Page 4 content goes here -->
+            <h2>NLT 15 DAYS PRIOR TO ARRIVAL</h2>
+            <p>Contact IDRC for current status of checklist requests.</p>
+            <p>Provide Airfield Drivers list. (36 OSS/OSAM, 36OSS.OSA.AMOPS@us.af.mil , 366-4188)
+                *Identify who will require CMA (runway) access*</p>
+            <p>Verify with 36 CONS that contracted requirements have been awarded.</p>
+            <p>Contact Airfield Management and submit Flight Planning LOA/Information.
+                (36 OSS/OSAA, Bldg 17002; 36OSS.OSA.AMOPS@us.af.mil or 366-4188)</p>
+            <p>Contact the IDRC to notify them of when your PAX/ Cargo aircraft will be coming in. The IDRC
+                will create a Reception Schedule of Events (RSOE) worksheet to notify the RWG reps and those
+                with a need to know to assist you upon arrival. (366-1300)
+                Any transportation requirements coordinate transportation with VOPS. Please provide a pickup and
+                drop-off location, and a POC to sign off for the cargo. Trans will not be able to transport cargo
+                without a POC to sign forms. (366-2239)</p>
+            <h2>NLT 5 DAYS PRIOR TO ARRIVAL</h2>
+            <p>Email ADVON/main body travel itineraries to LGRDX.</p>
+            <p>Provide IDRC with final mission info and transportation requirements (bus, forklift, flatbed, etc.).</p>
+            <p>Provide final load plans to IDRC via email (366-1300)</p>
+            <p>Provide final passenger manifests to IDRC via email (366-1300)</p>
+            <p>Contact 734th Air Mobility Squadron (AMS) Capability Forecasting (366-6055) NLT 48 hrs prior
+                to arrival (only for units transporting explosives).</p>
+            <p>Units must be able to provide reflective belts to all of their personnel who will be working during
+                periods of reduced visibility (i.e. inclement weather, and hours of darkness, etc.).</p>
+
+            <button class="prev-button" data-target="page-3-content">Previous</button>
+            <button class="next-button" data-target="page-5-content">Next</button>
+
         </div>
 
+        <!-- Page 5 -->
         <div id="page-5-content" class="content-div" style="display:none;">
-            <!-- Page 5 content goes here -->
+            <h1>UPON ADVON ARRIVAL</h1>
+            <p><strong>PERSCO In-processing:</strong> All deployed and/or TDY personnel (regardless of branch of service
+                or
+                country) are required to process through 36 FSS/PERSCO upon arrival. The Unit POC must contact
+                PERSCO to attend the next In-Processing Brief. During exercises, PERSCO briefing times will be
+                annotated on the applicable reporting instructions. Personnel will need a copy of their orders,
+                mobility folder, AF Form 245, and ID Card.</p>
+            <h2>Contact Information:</h2>
+            <p><strong>NIPR Email:</strong> <a href="mailto:36fss.persco@us.af.mil">36fss.persco@us.af.mil</a></p>
+            <p><strong>PERSCO Phone:</strong> DSN: 315-366-5195/3152 or Comm. Cell: 671-688-2942</p>
+            <p><strong>Location:</strong> Building 22026, Room 155</p>
+            <p>Visit 36 LRS/IDRC in Bldg 17000 and receive RWG slides and Andersen AFB ADVON checklist.</p>
+            <p>Finalize plans for beddown, reception briefings, airfield driver training, weather/METOC
+                integration, facility/key issuance, vehicles, support equipment, etc.</p>
+            <p>If an account for hazardous waste support has been established with NAVFAC Marianas, please
+                contact LMS Hazwaste Operations at (671) 339-2422/2419 or email LMSHW@LMSFM.com to
+                coordinate set up of hazardous waste accumulation point, receive waste disposal forms, and submit
+                copies of hazwaste training certificates</p>
+            <p>Appoint Flight/Ground/Weapons Safety Representative as applicable (Bldg 23003/Rm 121; 366-
+                7233)</p>
+            <p>For all units scheduled to be on island for more than 30 days, the senior enlisted leader needs to
+                schedule a meeting with the 36 Wg Command Chief by contacting the WG Staff at
+                36wg.ccce@us.af.mil or phone number 366-3089</p>
+            <p>Medical Providers must in-process with 36 MDG SGH, SGP, Pharmacy, Laboratory and Radiology
+                sections prior to start of practice. Any questions regarding MDG matters direct to DSN 366-4270.</p>
+
+            <nav class="page-navigation">
+                <button class="prev-button" data-target="page-4-content">Previous</button>
+                <button class="next-button" data-target="arc-1-content">Next</button>
+            </nav>
         </div>
+
+
+
+        <!-- ARC 1 Content -->
+        <div id="arc-1-content" class="content-div" style="display:none;">
+            <!-- Step 1 -->
+            <div id="step1" class="form-step">
+                <h1>STATEMENT OF AGREEMENT / UNDERSTANDING:</h1>
+                <p><strong>Funding:</strong> I understand that most support functions at Andersen AFB are limited due to
+                    minimal funding
+                    and that my unit must provide funding documents (DD form 448, MIPR) and/or account information
+                    prior to arrival. <strong>Priority support:</strong> I understand contingency operations may take
+                    precedence over
+                    exercise operations, and some services previously agreed upon may be adjusted to meet these
+                    requirements. <strong>Safety</strong> I will ensure all personnel employing from Andersen AFB
+                    receive a
+                    Guam local
+                    conditions safety briefing, either before departing home station or within 24 hours of arrival.
+                    <strong>Stewardship / Accountability: </strong> I will ensure all issued facilities, keys,
+                    equipment,
+                    and vehicles will be
+                    returned prior to my unit departing the installation. If loss or damage is noted upon return, I will
+                    ensure a
+                    funding document is provided for replacement or repair. Requests for changes to turn-in procedures
+                    will
+                    be coordinated in advance and will be accommodated on an as available basis. I understand my unit is
+                    responsible for the cost of damaged facilities, equipment, and vehicles.
+                </p>
+                <!-- Your form fields for step 1 -->
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="printed-rank-name">Printed Rank, Name and Unit</label>
+                        <input type="text" id="printed-rank-name" name="printedRankName" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="signature">Signature (/signed, initials, date/):</label>
+                        <input type="text" id="signature" name="signature" required>
+                    </div>
+                </div>
+                <button class="prev-button" data-target="page-5-content">Previous</button>
+                <button type="button" class="arc1-next-button" data-next="step2">Continue</button>
+            </div>
+
+
+            <!-- Step 2 -->
+            <div id="step2" class="form-step" style="display:none;">
+                <h1>MISSION INFORMATION</h1>
+                <p>Identify the proper name of your mission and/or your unit designator. To expedite
+                    customer support, please include this title in all future correspondence and phone calls.</p>
+                <label for="mission-unit-name">Mission / Unit Name</label>
+                <input type="text" id="mission-unit-name" name="missionUnitName" required>
+
+                <p>Please be thorough in your description. This information is key to prioritizing
+                    requirements and overall processing. If the concept of operations is classified, please
+                    forward it via the classified email address listed previously.</p>
+                <label for="concept-operations">Concept of Operations</label>
+                <input type="text" id="concept-operations" name="concept-operations" required>
+
+                <label for="number-of-aircraft">Number and Type of Aircraft</label>
+                <input type="text" id="number-of-aircraft" name="number-of-aircraft" required>
+
+                <button type="button" class="arc1-prev-button" data-prev="step1">Back</button>
+                <button type="button" class="arc1-next-button" data-next="step3">Continue</button>
+            </div>
+
+
+            <!-- Step 3 -->
+            <div id="step3" class="form-step" style="display:none;">
+                <h2>MISSION INFORMATION</h2>
+
+                <!-- Number of Personnel -->
+                <div class="form-row-step3">
+                    <div class="form-column-step3">
+                        <label for="advon-personnel">ADVON:</label>
+                        <input type="number" id="advon-personnel" name="advon-personnel" required>
+                    </div>
+                    <div class="form-column-step3">
+                        <label for="mainbody-personnel">MAIN BODY:</label>
+                        <input type="number" id="mainbody-personnel" name="mainbody-personnel" required>
+                    </div>
+                </div>
+
+                <!-- Dates -->
+                <div class="form-dates-row">
+                    <div class="form-dates-column">
+                        <label>Dates</label>
+                        <label for="planning-conference">Planning Conference:</label>
+                        <input type="date" id="planning-conference" name="planning-conference">
+                        <label for="site-visit-survey">Site Visit/Survery:</label>
+                        <input type="date" id="site-visit-survey" name="site-visit-survey">
+                        <label for="advon-arrival">ADVON Arrival</label>
+                        <input type="date" id="advon-arrival" name="advon-arrival">
+                        <label for="aircraft-arrival">Aircraft Arrival:</label>
+                        <input type="date" id="aircraft-arrival" name="aircraft-arrival">
+                        <label for="main-body-arrival">Main Body Arrival:</label>
+                        <input type="date" id="main-body-arrival" name="main-body-arrival">
+                        <label for="official-mission-dates">Official Mission Dates:</label>
+                        <input type="date" id="official-mission-dates" name="official-mission-dates">
+                        <label for="departures">Departures:</label>
+                        <input type="date" id="departures" name="departures">
+                    </div>
+                    <!-- Repeat the above div for each date input you need -->
+                </div>
+
+                <button type="button" class="arc1-prev-button" data-prev="step2">Back</button>
+                <button type="button" class="arc1-next-button" data-next="step3">Continue</button>
+            </div>
+
+
+
+            <!-- Additional steps go here -->
+
+            <!-- Final step -->
+            <div id="stepFinal" class="form-step" style="display:none;">
+                <h2>Finalize</h2>
+                <!-- Your form fields for final step -->
+                <!-- ... -->
+                <button type="button" class="arc1-prev-button" data-prev="stepN">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+
 </body>
 
 </html>
+
+
+
+<!--
+        <div id="arc-1-content" class="content-div">
+            <form id="arc1-form" class="arc-form">
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="grid-two-columns">
+
+                        <div class="form-section">
+                            <label for="printed-rank-name">Printed Rank, Name and Unit:</label>
+                            <input type="text" id="printed-rank-name" name="printedRankName" required>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="signature">Signature (/signed, initials, date/):</label>
+                            <input type="text" id="signature" name="signature" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>MISSION INFORMATION</legend>
+                    <div class="form-section">
+                        <p class="input-instruction">Identify the proper name of your mission and/or your unit
+                            designator. To expedite customer support, please include this title in all future
+                            correspondence and phone calls.</p>
+                        <label for="mission-unit-name">Mission/Unit Name:</label>
+                        <input type="text" id="mission-unit-name" name="missionUnitName" required>
+                    </div>
+
+                    <div class="form-section">
+                        <p class="input-instruction">Please be thorough in your description. This information is key to
+                            prioritizing
+                            requirements and overall processing. If the concept of operations is classified, please
+                            forward it via the classified email address listed previously</p>
+                        <label for="concept-operations">Concept of Operations:</label>
+                        <textarea id="concept-operations" name="conceptOperations" required></textarea>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="aircraft-number-type">Number and Type of Aircraft:</label>
+                        <input type="text" id="aircraft-number-type" name="aircraftNumberType" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Number of Personnel</legend>
+                    <div class="form-section">
+                        <div class="grid-two-columns">
+                            <div>
+                                <label for="advon-number-personnel">ADVON:</label>
+                                <input type="number" id="advon-number-personnel" name="advonNumberPersonnel" required>
+                            </div>
+                            <div>
+                                <label for="main-body-number-personnel">MAIN BODY:</label>
+                                <input type="number" id="main-body-number-personnel" name="mainBodyNumberPersonnel"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="grid-dates">
+                    <legend>DATES</legend>
+
+                    <div class="form-section">
+                        <label for="advon-arrival">ADVON Arrival:</label>
+                        <input type="date" id="advon-arrival" name="advonArrival">
+                    </div>
+                    <div class="form-section">
+                        <label for="planning-conference">Planning Conference:</label>
+                        <input type="date" id="planning-conference" name="planningConference">
+                    </div>
+                    <div class="form-section">
+                        <label for="site-visit-survey">Site Visit/Survey:</label>
+                        <input type="date" id="site-visit-survey" name="siteVisitSurvey">
+                    </div>
+                    <div class="form-section">
+                        <label for="aircraft-arrival">Aircraft Arrival:</label>
+                        <input type="date" id="aircraft-arrival" name="aircraftArrival">
+                    </div>
+                    <div class="form-section">
+                        <label for="main-body-arrival">Main Body Arrival:</label>
+                        <input type="date" id="main-body-arrival" name="mainBodyArrival">
+                    </div>
+                    <div class="form-section">
+                        <label for="official-mission-dates-start">Official Mission Dates Start:</label>
+                        <input type="date" id="official-mission-dates-start" name="officialMissionDatesStart">
+                    </div>
+                    <div class="form-section">
+                        <label for="official-mission-dates-end">Official Mission Dates End:</label>
+                        <input type="date" id="official-mission-dates-end" name="officialMissionDatesEnd">
+                    </div>
+                    <div class="form-section">
+                        <label for="departures">Departures:</label>
+                        <input type="date" id="departures" name="departures">
+                    </div>
+                </fieldset>
+
+
+
+                <div class="form-section">
+                    <button type="button" class="save-continue-button">Save and Continue</button>
+                </div>
+
+            </form>
+        </div>
+    -->
