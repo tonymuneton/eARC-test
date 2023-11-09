@@ -524,173 +524,102 @@
 
                 <table class="unit-info-table">
                     <tr>
-                        <th>Logistics POC:</th>
+                        <td>Logistics POC:</td>
                         <td><input type="text" id="logistic-poc" name="logistic-poc"></td>
-                        <th>DSN Phone:</th>
+                        <td>DSN Phone:</td>
                         <td><input type="tel" id="logistic-phone" name="logistic-phone"></td>
-                        <th>Email Address:</th>
+                        <td>Email Address:</td>
                         <td><input type="email" id="logistic-email" name="logistic-email"></td>
                     </tr>
                     <tr>
-                        <th>Operations POC:</th>
+                        <td>Operations POC:</td>
                         <td><input type="text" id="operations-poc" name="operations-poc"></td>
-                        <th>DSN Phone:</th>
+                        <td>DSN Phone:</td>
                         <td><input type="tel" id="operations-phone" name="operations-phone"></td>
-                        <th>Email Address:</th>
+                        <td>Email Address:</td>
                         <td><input type="email" id="operations-email" name="operations-email"></td>
                     </tr>
                     <tr>
-                        <th>Maintenance POC:</th>
+                        <td>Maintenance POC:</td>
                         <td><input type="text" id="maintenance-poc" name="maintenance-poc"></td>
-                        <th>DSN Phone:</th>
+                        <td>DSN Phone:</td>
                         <td><input type="tel" id="maintenance-phone" name="maintenance-phone"></td>
-                        <th>Email Address:</th>
+                        <td>Email Address:</td>
                         <td><input type="email" id="maintenance-email" name="maintenance-email"></td>
                     </tr>
                     <tr>
-                        <th>Finance POC:</th>
+                        <td>Finance POC:</td>
                         <td><input type="text" id="finance-poc" name="finance-poc"></td>
-                        <th>DSN Phone:</th>
+                        <td>DSN Phone:</td>
                         <td><input type="tel" id="finance-phone" name="finance-phone"></td>
-                        <th>Email Address:</th>
+                        <td>Email Address:</td>
                         <td><input type="email" id="finance-email" name="finance-email"></td>
                     </tr>
                     <tr>
-                        <th>WG/CC:</th>
+                        <td>WG/CC:</td>
                         <td><input type="text" id="wg-cc" name="wg-cc"></td>
-                        <th>DSN Phone:</th>
+                        <td>DSN Phone:</td>
                         <td><input type="tel" id="wg-cc-phone" name="wg-cc-phone"></td>
-                        <th>Email Address:</th>
+                        <td>Email Address:</td>
                         <td><input type="email" id="wg-cc-email" name="wg-cc-email"></td>
                     </tr>
                 </table>
+
                 <div class="form-navigation-buttons">
-                    <button type="button" class="arc1-prev-button">Back</button>
-                    <button type="button" class="arc1-next-button">Save & Continue</button>
-                </div>
-
-                <!-- Additional steps go here -->
-
-                <!-- Final step -->
-                <div id="stepFinal" class="form-step" style="display:none;">
-                    <h2>Finalize</h2>
-                    <!-- Your form fields for final step -->
-                    <!-- ... -->
-                    <button type="button" class="arc1-prev-button" data-prev="stepN">Back</button>
-                    <button type="submit">Submit</button>
+                    <button type="button" class="arc1-prev-button" data-prev="step3">Back</button>
+                    <button type="button" class="arc1-next-button" data-next="step5">Save & Continue</button>
                 </div>
             </div>
+
+
+            <!-- Step 5 -->
+            <div id="step5" class="form-step" style="display:none;">
+                <h1>AIR MOVEMENTS</h1>
+                <p><strong>OPS Requirements:</strong> Every unit must contact Airfield Management (366-4188, Bldg 17002) prior to
+                    arrival to request a <strong>PPR</strong> (Prior Permission Required) number and parking location. Parking areas will be
+                    pre-coordinated and assigned as close to assigned maintenance facilities as possible. Prior to conducting
+                    local flight ops, aircrews are required to receive an airfield driving and local flying environment briefing (scheduled through Airfield Operations). The mission commander is required to notify the 36 WG
+                    Command Post (366-2981, Bldg 23003) by 2100L the day prior to any flight operation. The details
+                    collected are published on the wing's consolidated flight schedule and are utilized by security forces,
+                    transient alert, transportation, fuels, Afld Mngt, weather flight, USDA (Brown Tree Snake inspection),
+                    and the tower to program aircraft support.</p>
+
+                <p><strong>Civilian Aircraft</strong> All non-US military aircraft must complete an
+                    ALAN (Aircraft Landing Authorization Number) from their American
+                    Embassy prior to arrival. <strong>. Please ensure Airfield Management has
+                        received this authorization prior to your departure.</strong></p> 
+                <label for="civil-permit">Civil Landing Permit Number:</label>
+                <p></p>
+                <input type="text" id="civil-permit" name="civil-permit" required>
+
+                <p><strong>Allied Military Aircraft</strong> Air Force Civil Landing Permit is required to be
+                    on file prior to arrival. Please coordinate this permit with the Pentagon at
+                    703-697-5697. Please ensure Airfield Management has received this
+                    authorization prior to departure.</p>
+                <label for="alan-number">ALAN Identification Number:</label>
+                <p></p>
+                <input type="text" id="alan-number" name="alan-number" required>
+
+                
+                <div class="form-navigation-buttons">
+                    <button type="button" class="arc1-prev-button" data-prev="step4">Back</button>
+                    <button type="button" class="arc1-next-button" data-next="step6">Save & Continue</button>
+                </div>
+            </div>
+
+            <!-- Additional steps go here -->
+
+            <!-- Final step -->
+            <div id="stepFinal" class="form-step" style="display:none;">
+                <h2>Finalize</h2>
+                <!-- Your form fields for final step -->
+                <!-- ... -->
+                <button type="button" class="arc1-prev-button" data-prev="stepN">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
 
 
 </body>
 
 </html>
-
-
-
-<!--
-        <div id="arc-1-content" class="content-div">
-            <form id="arc1-form" class="arc-form">
-
-                <fieldset>
-                    <legend>Personal Details</legend>
-                    <div class="grid-two-columns">
-
-                        <div class="form-section">
-                            <label for="printed-rank-name">Printed Rank, Name and Unit:</label>
-                            <input type="text" id="printed-rank-name" name="printedRankName" required>
-                        </div>
-
-                        <div class="form-section">
-                            <label for="signature">Signature (/signed, initials, date/):</label>
-                            <input type="text" id="signature" name="signature" required>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>MISSION INFORMATION</legend>
-                    <div class="form-section">
-                        <p class="input-instruction">Identify the proper name of your mission and/or your unit
-                            designator. To expedite customer support, please include this title in all future
-                            correspondence and phone calls.</p>
-                        <label for="mission-unit-name">Mission/Unit Name:</label>
-                        <input type="text" id="mission-unit-name" name="missionUnitName" required>
-                    </div>
-
-                    <div class="form-section">
-                        <p class="input-instruction">Please be thorough in your description. This information is key to
-                            prioritizing
-                            requirements and overall processing. If the concept of operations is classified, please
-                            forward it via the classified email address listed previously</p>
-                        <label for="concept-operations">Concept of Operations:</label>
-                        <textarea id="concept-operations" name="conceptOperations" required></textarea>
-                    </div>
-
-                    <div class="form-section">
-                        <label for="aircraft-number-type">Number and Type of Aircraft:</label>
-                        <input type="text" id="aircraft-number-type" name="aircraftNumberType" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Number of Personnel</legend>
-                    <div class="form-section">
-                        <div class="grid-two-columns">
-                            <div>
-                                <label for="advon-number-personnel">ADVON:</label>
-                                <input type="number" id="advon-number-personnel" name="advonNumberPersonnel" required>
-                            </div>
-                            <div>
-                                <label for="main-body-number-personnel">MAIN BODY:</label>
-                                <input type="number" id="main-body-number-personnel" name="mainBodyNumberPersonnel"
-                                    required>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="grid-dates">
-                    <legend>DATES</legend>
-
-                    <div class="form-section">
-                        <label for="advon-arrival">ADVON Arrival:</label>
-                        <input type="date" id="advon-arrival" name="advonArrival">
-                    </div>
-                    <div class="form-section">
-                        <label for="planning-conference">Planning Conference:</label>
-                        <input type="date" id="planning-conference" name="planningConference">
-                    </div>
-                    <div class="form-section">
-                        <label for="site-visit-survey">Site Visit/Survey:</label>
-                        <input type="date" id="site-visit-survey" name="siteVisitSurvey">
-                    </div>
-                    <div class="form-section">
-                        <label for="aircraft-arrival">Aircraft Arrival:</label>
-                        <input type="date" id="aircraft-arrival" name="aircraftArrival">
-                    </div>
-                    <div class="form-section">
-                        <label for="main-body-arrival">Main Body Arrival:</label>
-                        <input type="date" id="main-body-arrival" name="mainBodyArrival">
-                    </div>
-                    <div class="form-section">
-                        <label for="official-mission-dates-start">Official Mission Dates Start:</label>
-                        <input type="date" id="official-mission-dates-start" name="officialMissionDatesStart">
-                    </div>
-                    <div class="form-section">
-                        <label for="official-mission-dates-end">Official Mission Dates End:</label>
-                        <input type="date" id="official-mission-dates-end" name="officialMissionDatesEnd">
-                    </div>
-                    <div class="form-section">
-                        <label for="departures">Departures:</label>
-                        <input type="date" id="departures" name="departures">
-                    </div>
-                </fieldset>
-
-
-
-                <div class="form-section">
-                    <button type="button" class="save-continue-button">Save and Continue</button>
-                </div>
-
-            </form>
-        </div>
-    -->
