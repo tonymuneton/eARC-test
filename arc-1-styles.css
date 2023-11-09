@@ -1,0 +1,207 @@
+/* General Styles for form steps */
+.form-step {
+    margin: 20px 0;
+    padding: 50px;
+    font-family: futura;
+
+}
+
+.form-step h2 {
+    text-align: center; /* Centers the text inside the h2 element */
+    margin-bottom: 30px; /* More space below the title */
+    padding-bottom: 10px; /* Padding at the bottom of the title */
+    color: #333;
+    
+
+
+}
+
+
+.form-step p {
+    margin-bottom: 35px; /* Adjust as needed for space below paragraphs */
+}
+
+.form-step input[type="text"],
+.form-step textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure the input width includes padding */
+}
+
+.form-step .prev-button,
+.form-step .next-button {
+    background-color: #5cb85c; /* Green */
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-step .prev-button {
+    border: none;
+    padding: 15px 15px; /* Adjust padding to match your design */
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+    background-color: #003366; /* Navy blue, adjust the hex code to match the logo's blue */
+    border-radius: 4px;
+    font-size: 16px; /* Adjust font-size as needed */
+    margin: 4px 2px;
+    text-decoration: none;
+}
+
+.form-step .prev-button:hover,
+.form-step .next-button:hover {
+    background-color: #002244; /* A darker shade of the button color for hover state */ /* A darker shade for hover state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Specific styles for the final step */
+#stepFinal {
+    background: #dff0d8; /* Light green background for the final step */
+}
+
+#stepFinal .submit-button {
+    background-color: #5bc0de; /* Light blue */
+}
+
+/* You might want to add responsiveness for mobile views */
+@media (max-width: 768px) {
+    .form-step input[type="text"],
+    .form-step textarea {
+        width: 100%;
+    }
+}
+.form-step label {
+    display: block; /* Makes the label take up the full width */
+    margin-bottom: 5px; /* Adds some space between the label and the input */
+    color: #555; /* Color for the label text */
+    font-size: 16px; /* Slightly larger font size for labels */
+}
+
+.form-step input[type="text"] {
+    margin-bottom: 20px; /* Adds more space below the input for spacing */
+    /* Other styles remain the same */
+}
+
+/* Button base style */
+.arc1-next-button, .arc1-prev-button, .prev-button, .next-button {
+    border: none;
+    padding: 15px 30px; /* Adjust padding to match your design */
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+    background-color: #003366; /* Navy blue, adjust the hex code to match the logo's blue */
+    border-radius: 4px;
+    font-size: 16px; /* Adjust font-size as needed */
+    margin: 4px 2px;
+    text-decoration: none;
+  }
+  
+  /* Button hover/focus style */
+  .arc1-next-button:hover, .arc1-prev-button:hover, .prev-button:hover, .next-button:hover,
+  .arc1-next-button:focus, .arc1-prev-button:focus, .prev-button:focus, .next-button:focus {
+    background-color: #002244; /* A darker shade of the button color for hover state */ /* A darker shade for hover state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional: Button active style (when it's clicked) */
+  .arc1-next-button:active, .arc1-prev-button:active, .prev-button:active, .next-button:active {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2) inset; /* Inner shadow to give a "pressed" effect */
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em; /* Adjust as needed for spacing */
+  }
+  
+  .form-column {
+    flex: 1; /* Each column will take up equal space */
+    margin-right: 10px; /* Adjust as needed for spacing */
+  }
+  
+  .form-column:last-child {
+    margin-right: 0; /* No margin for the last column */
+  }
+  
+  /* Add some padding inside the input boxes */
+  input[type="text"] {
+    width: 100%; /* Make input take full width of its container */
+    padding: 10px; /* Adjust as needed for padding */
+    margin-bottom: 0.5em; /* Adjust as needed for spacing */
+    border: 1px solid #ccc; /* Adjust as needed for border */
+    border-radius: 4px; /* Adjust as needed for rounded corners */
+  }
+  
+  /* Style the label for consistency */
+  label {
+    display: block;
+    margin-bottom: 0.5em; /* Adjust as needed for spacing */
+    font-weight: bold; /* Optional: makes the label text bold */
+  }
+  
+
+ /* Step 3 Styles */
+
+.form-step h2 {
+    text-align: center; /* Center align the h2 header if desired */
+    font-weight: bold; /* Make the header bold */
+}
+
+/* Number of Personnel */
+.form-row-step3 {
+    display: flex;
+    justify-content: space-between; /* This will place the two divs side by side */
+    margin-bottom: 20px; /* Add some space below the row */
+}
+
+.form-column-step3 {
+    flex: 1; /* Each column will take up equal space */
+    margin-right: 10px; /* Space between the columns */
+}
+
+.form-column-step3:last-child {
+    margin-right: 0; /* No margin on the right for the last column */
+}
+
+/* Dates */
+.form-dates-row {
+    display: block; /* Stack the date inputs vertically */
+}
+
+.form-dates-column label {
+    display: block; /* Ensure the label is on its own line */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.form-dates-column input[type="date"] {
+    width: 100%; /* Full width of the column */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 10px; /* Space after the input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners for the inputs */
+}
+
+/* If you have a specific maximum width you'd like for the dates column */
+.form-dates-column {
+    max-width: 500px; /* Or whatever maximum width you prefer */
+    margin: auto; /* This will center the column if it's less than 100% width */
+}
+
