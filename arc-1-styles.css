@@ -236,37 +236,70 @@ input[type="date"] {
 
 
 
+#step4 {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    font-family: "Futura", Arial, sans-serif; /* Ensure Futura is loaded or have a fallback */
+}
+
+#step4 h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
 
 .unit-info-table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* This helps with consistent column widths */
-}
-
-.unit-info-table th, .unit-info-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-}
-
-.unit-info-table th {
-    background-color: #f2f2f2; /* Light gray background for headers */
-    width: 15%; /* Adjust if needed */
+    margin-bottom: 1em;
 }
 
 .unit-info-table td {
-    width: 35%; /* Adjust if needed */
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+/* Set specific widths for label and input cells */
+.unit-info-table td:nth-child(1), /* Logistics POC label */
+.unit-info-table td:nth-child(3), /* DSN Phone label */
+.unit-info-table td:nth-child(5) { /* Email Address label */
+    width: -5%;
+}
+
+.unit-info-table td:nth-child(2), /* Logistics POC input */
+.unit-info-table td:nth-child(4), /* DSN Phone input */
+.unit-info-table td:nth-child(6) { /* Email Address input */
+    width: 35%;
 }
 
 .unit-info-table input[type="text"],
 .unit-info-table input[type="tel"],
 .unit-info-table input[type="email"] {
-    width: 100%;
-    padding: 5px;
+    width: 100%; /* Make input take full width of the cell */
+    padding: 10px;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#step5 label {
+    display: block;
+    margin-bottom: -35px; /* Adjust as needed for space between label and input */
+}
+
+#step5 input[type="text"] {
+    width: 100%; /* Adjust as needed */
+    padding: 10px;
+    margin-bottom: 20px; /* Space after the input before next element */
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+.form-navigation-buttons {
+    text-align: center;
+    margin-top: 1em;
+}
 .form-navigation-buttons {
     margin-top: 20px;
     text-align: center;
