@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eARC Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard-styles.css"> 
+
 </head>
 
 <body>
@@ -19,21 +21,75 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#user-guide">User Guide</a></li>
-                    <li><a href="#about">About eARC</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="#login">Login</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#user-guide">User Guide</a></li>
+                    <li><a href="index.html#about">About eARC</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="index.html#login">Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
+    
+    
     <div class="dashboard-content">
-        <h1>Welcome to the Dashboard</h1>
+        <h1>Reception Working Group Dashboard (SAMPLE)</h1>
+        <table class="dashboard-table">
+            <!-- Table Headers -->
+            <tr>
+                <th>Month</th>
+                <th>Unit Name</th>
+                <th>JAN</th>
+                <th>FEB</th>
+                <th>MAR</th>
+                <!-- Add more months as needed -->
+                <th>UPCOMING</th>
+            </tr>
+            <!-- Airfield Management Row -->
+            <tr>
+                <td>Airfield Mgmt</td>
+                <td>EX Name</td>
+                <td class="status-green">✔️</td>
+                <td class="status-yellow">⚠️</td>
+                <td class="status-red">❌</td>
+                <!-- Add more status cells as needed -->
+                <td></td>
+            </tr>
+            <!-- Operations Workspace Row -->
+            <tr>
+                <td>Ops Workspace</td>
+                <td>Unit Name</td>
+                <td class="status-yellow">⚠️</td>
+                <td class="status-green">✔️</td>
+                <td class="status-red">❌</td>
+                <!-- Add more status cells as needed -->
+                <td></td>
+            </tr>
+            <!-- Additional Rows -->
+            <!-- Add rows for AFE/PR/ALSE, MX, AGE, Munitions, Invicta Support, etc. -->
+            <!-- Example for AFE/PR/ALSE -->
+            <tr>
+                <td>AFE/PR/ALSE</td>
+                <td>Unit Name</td>
+                <td class="status-red">❌</td>
+                <td class="status-green">✔️</td>
+                <td class="status-yellow">⚠️</td>
+                <!-- Add more status cells as needed -->
+                <td></td>
+            </tr>
+            <!-- Add additional rows for each category -->
+        </table>
+        <!-- Key Legend -->
+        <div class="key-legend">
+            <p><span class="key-symbol key-green"></span> - All coordination is complete but asked assets cannot be secured</p>
+            <p><span class="key-symbol key-yellow"></span> - Andersen rep and POC are in coordination (awaiting funding/approval)</p>
+            <p><span class="key-symbol key-red"></span> - POC has not responded. Overdue/not complete and nearing arrival</p>
+        </div>
     </div>
-
+    
     <script src="scripts.js"></script>
+    <script src="dashboard.js"></script>
+
 </body>
 
 </html>
