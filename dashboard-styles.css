@@ -1,0 +1,71 @@
+.dashboard-wrapper {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.dashboard h1 {
+    text-align: center;
+    color: #333;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.dashboard-table th, 
+.dashboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.dashboard-table th {
+    background-color: #555;
+    color: white;
+}
+
+.status-green {
+    background-color: #c7ea46;
+}
+
+.status-yellow {
+    background-color: #f7f700;
+}
+
+.status-red {
+    background-color: #ff6961;
+}
+
+.key-legend {
+    margin-top: 20px;
+}
+
+.key-symbol {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.key-green {
+    background-color: #c7ea46; /* or any green shade you prefer */
+}
+
+.key-yellow {
+    background-color: #f7f700; /* or any yellow shade you prefer */
+}
+
+.key-red {
+    background-color: #ff6961; /* or any red shade you prefer */
+}
+
+/* Scrollbar for smaller screens */
+@media only screen and (max-width: 600px) {
+    .dashboard {
+        overflow-x: auto;
+    }
+}
